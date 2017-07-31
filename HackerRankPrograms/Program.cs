@@ -10,6 +10,7 @@ namespace HackerRankPrograms
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
