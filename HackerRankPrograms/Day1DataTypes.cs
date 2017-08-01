@@ -8,7 +8,7 @@ namespace HackerRankPrograms
 {
     class Day1DataTypes
     {
-        static void Main(String[] args)
+        static void Main2(String[] args)
         {
             int i = 4;
             double d = 4.0;
