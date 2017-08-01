@@ -9,7 +9,7 @@ namespace HackerRankPrograms
     class DiagonalDiff_algo
     {
         //current rank 431682
-        static void Main(String[] args)
+        static void Main3(String[] args)
         {
             int n = Convert.ToInt32(Console.ReadLine());
             int[][] a = new int[n][];
