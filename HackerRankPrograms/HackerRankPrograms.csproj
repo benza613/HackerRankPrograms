@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Day1DataTypes.cs" />
     <Compile Include="Day2Operators.cs" />
+    <Compile Include="Day3ConditionalStatements.cs" />
     <Compile Include="DiagonalDiff_algo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
