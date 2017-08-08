@@ -45,10 +45,12 @@
     <Compile Include="Day1DataTypes.cs" />
     <Compile Include="Day2Operators.cs" />
     <Compile Include="Day3ConditionalStatements.cs" />
+    <Compile Include="Day6Strings.cs" />
     <Compile Include="DiagonalDiff_algo.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quartiles.cs" />
     <Compile Include="Stats10days0.cs" />
     <Compile Include="TimeConversion_algo.cs" />
     <Compile Include="WeightedMean_challenges0.cs" />
