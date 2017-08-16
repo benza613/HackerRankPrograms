@@ -46,6 +46,7 @@
     <Compile Include="Day2Operators.cs" />
     <Compile Include="Day3ConditionalStatements.cs" />
     <Compile Include="Day6Strings.cs" />
+    <Compile Include="Day8DictsNMaps.cs" />
     <Compile Include="DiagonalDiff_algo.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
