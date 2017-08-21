@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Day10BinaryNumbers.cs" />
+    <Compile Include="Day112DArrays.cs" />
     <Compile Include="Day1DataTypes.cs" />
     <Compile Include="Day2Operators.cs" />
     <Compile Include="Day3ConditionalStatements.cs" />
