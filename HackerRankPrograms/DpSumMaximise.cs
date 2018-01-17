@@ -11,7 +11,7 @@ namespace HackerRankPrograms
         //Given a positive integer n, break it into the sum of at least two positive integers and maximize the product of those integers.Return the maximum product you can get.
         //For example, given n = 2, return 1 (2 = 1 + 1); given n = 10, return 36 (10 = 3 + 3 + 4).
 
-        static void Main(String[] args)
+        static void Main2(String[] args)
         {
             int n = Convert.ToInt32(Console.ReadLine());
             int result = 1;

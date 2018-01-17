@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="arrays\array-ds.cs" />
+    <Compile Include="arrays\dynamic-array.cs" />
     <Compile Include="Day10BinaryNumbers.cs" />
     <Compile Include="Day112DArrays.cs" />
     <Compile Include="Day1DataTypes.cs" />
