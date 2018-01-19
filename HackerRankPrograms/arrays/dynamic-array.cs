@@ -8,50 +8,52 @@ namespace HackerRankPrograms.arrays
 {
     class dynamic_array
     {
-        static void Main(String[] args)
+        static void Main36(String[] args)
         {
-            int lastnumber = 0;
-
-            string[] arr_temp = Console.ReadLine().Split(' ');
-            int[] arr = Array.ConvertAll(arr_temp, Int32.Parse);
-
-            int N = arr[0];
-            int queries = arr[1];
-
-            //PROBLEM : https://www.hackerrank.com/challenges/dynamic-array/problem
-
-            List<List<int>> seq = new List<List<int>>();
+            //solution inspired by jwang1004
+            int[] para = Array.ConvertAll(Console.ReadLine().Split(' '), Int32.Parse);
+            int N = para[0];
+            int Q = para[1];
+            List<int>[] lists = new List<int>[N];
             for (int i = 0; i < N; i++)
             {
-                seq[i] = new List<int>();
+                lists[i] = new List<int>();
             }
 
-            int[][] data = new int[queries][];
-            for (int arr_i = 0; arr_i < queries; arr_i++)
+            int[][] queries = new int[Q][];
+            for (int i = 0; i < Q; i++)
             {
-                string[] arr_tempx = Console.ReadLine().Split(' ');
-                data[arr_i] = Array.ConvertAll(arr_tempx, Int32.Parse);
+                queries[i] = Array.ConvertAll(Console.ReadLine().Split(' '), Int32.Parse);
             }
-
-            foreach (var query in data)
+            int lastans = 0;
+            for (int i = 0; i < Q; i++)
             {
-                int qt = query[0];
-                int x = query[1];
-                int y = query[2];
-
-                if (qt == 1)
-                {
-                    int seq_num = ((x ^ lastnumber) % N);
-                    seq[seq_num].Add(y);
-                }
-                else
-                {
-                    int seq_num = ((x ^ lastnumber) % N);
-                    lastnumber = seq[seq_num][y];
-                    Console.WriteLine(lastnumber);
-                }
+                lastans = doQuery(lists, N, queries[i], lastans);
             }
-            Console.Read();
+
         }
+        static int doQuery(List<int>[] lists, int N, int[] query, int lastans)
+        {
+            int x = query[1];
+            int y = query[2];
+            int n = (x ^ lastans) % N;
+            if (query[0] == 1)
+            {
+                lists[n].Add(y);
+                return lastans;
+            }
+            else if (query[0] == 2)
+            {
+                int size = lists[n].Count;
+                int res = lists[n][y % size];
+                Console.WriteLine(res);
+                return res;
+            }
+            return lastans;
+        }
+
+        
+
+
     }
 }

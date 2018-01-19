@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="arrays\array-ds.cs" />
+    <Compile Include="arrays\array-left-rotation.cs" />
     <Compile Include="arrays\dynamic-array.cs" />
     <Compile Include="Day10BinaryNumbers.cs" />
     <Compile Include="Day112DArrays.cs" />
